@@ -1,0 +1,8 @@
+#!/bin/bash
+# https://docs.docker.com/docker-hub/builds/advanced/
+# SOURCE_BRANCH: the name of the branch or the tag ...
+
+if [[ -n "$SOURCE_BRANCH" ]]; then
+  VER_DOTLESS=$(echo $SOURCE_BRANCH | sed -e 's/\.//g')
+  sed -i "s@php74@php${VER_DOTLESS}@g" Dockerfile
+fi
