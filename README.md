@@ -6,5 +6,5 @@ via CI/CD pipeline.
 Pull the image tat which corresponds to the PHP version your Magento runs with, e.g.:
 
 ```
-getpagespeed/m2builder:7.4
+jellejanssens/m2builder:8.1
 ```

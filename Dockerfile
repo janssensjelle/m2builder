@@ -3,7 +3,7 @@ FROM centos:7
 RUN yum -y install epel-release
 RUN yum -y install -y openssh-clients git rsync
 RUN yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-RUN yum-config-manager --enable remi-php74
+RUN yum-config-manager --enable remi-php81
 RUN yum -y install composer \
   php-cli \
   php-fpm \
@@ -23,4 +23,4 @@ RUN yum -y install composer \
   php-pecl-memcached \
   php-ioncube-loader \
   php-bcmath \
-  php-intl 
+  php-intl

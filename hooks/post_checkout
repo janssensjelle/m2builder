@@ -5,5 +5,5 @@
 if [[ -n "$SOURCE_BRANCH" ]]; then
   VER_DOTLESS=$(echo $SOURCE_BRANCH | sed -e 's/\.//g')
   VER_DOTLESS=$(echo $VER_DOTLESS | sed -e 's/v//g')
-  sed -i "s@php74@php${VER_DOTLESS}@g" Dockerfile
+  sed -i "s@php81@php${VER_DOTLESS}@g" Dockerfile
 fi
